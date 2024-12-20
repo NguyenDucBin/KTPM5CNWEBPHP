@@ -23,7 +23,7 @@ class IssuesTableSeeder extends Seeder
         for ($i = 1; $i <= 50; $i++) {
             Issue::create([
                 'computer_id' => $computers->random()->id,
-                'reported_by' => $faker->optional()->name,
+                'reported_by' => $faker->name,
                 'reported_date' => $faker->dateTimeBetween('-1 year', 'now'),
                 'description' => $faker->paragraph,
                 'urgency' => $faker->randomElement($urgencies),

@@ -19,7 +19,7 @@ class ComputersTableSeeder extends Seeder
         $operatingSystems = ['Windows 10 Pro', 'Windows 11', 'Ubuntu 20.04'];
         $processors = ['Intel Core i5-11400', 'Intel Core i7-11700', 'AMD Ryzen 5 5600X'];
 
-        for ($i = 1; $i <= 20; $i++) {
+        for ($i = 1; $i <= 50;$i++) {
             Computer::create([
                 'computer_name' => 'Lab' . $faker->numberBetween(1, 5) . '-PC' . $faker->numberBetween(1, 50),
                 'model' => $faker->randomElement($models),
